@@ -1,0 +1,54 @@
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue: hsl(211, 68%, 94%);
+  --light-grayish-blue-second: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+
+  --normal-font: 500;
+  --bold-font: 800;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+  font-weight: 500 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--very-light-grayish-blue);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans";
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: white;
+  width: 40%;
+  height: 85%;
+  border: 2px solid red;
+  border-radius: 1.25rem;
+  box-shadow: 3px 5px 15px var(--light-grayish-blue);
+}
