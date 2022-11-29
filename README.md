@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- You can take a look [here](https://darrowv.github.io/notification-page)
+- You can take a look [here](https://darrowv.github.io/notifications-page)
 
 ## My process
 
