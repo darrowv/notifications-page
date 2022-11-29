@@ -22,26 +22,52 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  background-color: var(--very-light-grayish-blue);
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  background-color: var(--very-light-grayish-blue); 
   font-family: "Plus Jakarta Sans";
-}
-
-img {
-  max-width: 100%;
 }
 
 .flex {
   display: flex;
   align-items: center;
 }
+
+/* -----the majority of typography styles start----- */
+
+.action,
+.subject,
+.header__btn,
+.message {
+  color: var(--dark-grayish-blue);
+}
+
+.name,
+.subject {
+  font-weight: var(--bold-font);
+}
+
+.data__time {
+  color: var(--grayish-blue);
+}
+
+.name:hover,
+.subject:hover,
+.header__btn:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.card__list {
+  list-style-type: none;
+}
+
+/* -----the majority of typography styles end----- */
+
+/* -----general container and card styles start----- */
 
 .container {
   height: 100vh;
@@ -61,12 +87,11 @@ img {
 }
 
 /* removing scrollbar appearance in webkit browsers */
-
 .card::-webkit-scrollbar {
   display: none;
 }
 
-/* ------------------------------------ */
+/* -----adding responsiveness----- */
 
 @media (max-width: 750px) {
   .card {
@@ -85,16 +110,13 @@ img {
   }
 }
 
-.card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
-}
+/* -----general container and card styles end----- */
 
-.card__header h2,
-.card__header p {
-  margin: 0;
+/* -----header styles start----- */
+
+.card__header {
+  justify-content: space-between;
+  padding: 1.5rem 0;
 }
 
 .header__count {
@@ -106,11 +128,9 @@ img {
   padding: 0.2rem 0.7rem;
 }
 
-.card__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+/* -----header styles end----- */
+
+/* -----list item styles start----- */
 
 .card__list__item {
   display: flex;
@@ -120,29 +140,36 @@ img {
   padding: 1rem;
 }
 
+.unread {
+  background-color: var(--very-light-grayish-blue);
+  position: relative;
+}
+
+.unread::after {
+  content: "🔴";
+  font-size: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
 .card__list__item img {
-  width: 45px;
+  width: 2.75rem;
   align-self: flex-start;
   cursor: pointer;
 }
 
-.data {
+.item__data {
   width: 100%;
   margin-left: 1rem;
 }
 
-.main-data span {
+.data__main span {
   margin-right: 0.3rem;
 }
 
-.main-data {
-  margin: 0;
+.data__main {
   margin-bottom: 0.3rem;
-}
-
-.name,
-.subject {
-  font-weight: var(--bold-font);
 }
 
 .picture {
@@ -152,17 +179,6 @@ img {
 
 .picture:hover {
   filter: grayscale(0);
-}
-
-.action,
-.subject,
-.header__btn,
-.message {
-  color: var(--dark-grayish-blue);
-}
-
-.time {
-  color: var(--grayish-blue);
 }
 
 .message {
@@ -179,22 +195,4 @@ img {
   background-color: var(--light-grayish-blue);
 }
 
-.unread {
-  background-color: var(--very-light-grayish-blue);
-  position: relative;
-}
-
-.unread::after {
-  content: "🔴";
-  font-size: 0.5rem;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-}
-
-.name:hover,
-.subject:hover,
-.header__btn:hover {
-  color: var(--blue);
-  cursor: pointer;
-}
+/* -----list item styles end----- */
