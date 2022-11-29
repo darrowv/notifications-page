@@ -1,52 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>Notifications page</title>
 
-  <div class="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__header">
+          <h2>
+            Notifications
+            <span class="header__count" id="nots-count">3</span>
+          </h2>
 
-    <div class="card">
-      
+          <p class="header__btn" id="mark-btn">Mark all as read</p>
+        </div>
+
+        <ul class="card__list">
+          <li class="card__list__item unread">
+            <img
+              class="avatar"
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="Mark Webber"
+            />
+            <div class="data">
+              <p class="main-data">
+                <span class="name">Mark Webber</span>
+                <span class="action">reacted to your recent post</span>
+                <span class="subject">My first tournament today!</span>
+              </p>
+              <span class="time">1m ago</span>
+            </div>
+          </li>
+
+          <li class="card__list__item unread">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="Angela Gray"
+            />
+            <div class="data">
+              <p class="main-data">
+                <span class="name">Angela Gray</span>
+                <span class="action">followed you</span>
+              </p>
+              <span class="time">5m ago</span>
+            </div>
+          </li>
+
+          <li class="card__list__item unread">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob Thompson"
+            />
+            <div class="data">
+              <p class="main-data">
+                <span class="name">Jacob Thompson</span>
+                <span class="action">has joined your group</span>
+                <span class="subject">Chess Club</span>
+              </p>
+              <span class="time">1 day ago</span>
+            </div>
+          </li>
+
+          <li class="card__list__item">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin"
+            />
+            <div class="data">
+              <p class="main-data">
+                <span class="name">Rizky Hasanuddin</span>
+                <span class="action">sent you a private message</span>
+              </p>
+              <span class="time">5 days ago</span>
+              <p class="message">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </p>
+            </div>
+          </li>
+
+          <li class="card__list__item">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="Kimberly Smith"
+            />
+            <div class="data">
+              <p class="main-data">
+                <span class="name">Kimberly Smith</span>
+                <span class="action">commented on your picture</span>
+              </p>
+              <span class="time">1 week ago</span>
+            </div>
+            <div class="picture">
+              <img
+                src="./assets/images/image-chess.webp"
+                alt="commented photo"
+              />
+            </div>
+          </li>
+
+          <li class="card__list__item unread">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson"
+            />
+            <div class="data">
+              <p class="main-data">
+                <span class="name">Nathan Peterson</span>
+                <span class="action">reacted to your recent post</span>
+                <span class="subject">
+                  5 end-game strategies to increase your win rate
+                </span>
+              </p>
+              <span class="time">2 weeks ago</span>
+            </div>
+          </li>
+
+          <li class="card__list__item">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim" />
+            <div class="data">
+              <p class="main-data">
+                <span class="name">Anna Kim</span>
+                <span class="action">left the group</span>
+                <span class="subject">Chess Club</span>
+              </p>
+              <span class="time">2 weeks ago</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
-  </div>
-
-  Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <script src="script.js"></script>
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
