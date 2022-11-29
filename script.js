@@ -1,13 +1,17 @@
 import notices from "./assets/notifications.js";
 
+const markBtn = document.getElementById("mark-btn");
+const notsCount = document.getElementById("nots-count");
+const notsList = document.getElementById("nots-list");
 
-// for (let notice of notices) {
-//   const img = document.createElement("img");
-//   img.src = notice.img;
-//   img.alt = notice.name;
+markBtn.addEventListener("click", () => {
+  notsCount.textContent = "0";
 
-//   // const body = document.getElementsByTagName("body");
+  // console.log(notsList)
 
-//   document.body.append(img)
-//   console.log(notice.img);
-// }
+  for(let notice of notsList.children) {
+    if(notice.classList.contains("unread")) {
+      notice.classList.remove("unread");
+    }
+  }
+})
