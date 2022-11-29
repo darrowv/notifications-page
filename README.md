@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- You can take a look [here](https://darrowv.github.io/notification-page-main)
+- You can take a look [here](https://darrowv.github.io/notification-page)
 
 ## My process
 
@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-Actually, I learned how to use variable fonts. It is pretty interesting feature. I also found out that to use import statement in js file our script type should be "module".
+- Actually, I learned how to use variable fonts. It is pretty interesting feature. I also found out that to use import statement in js file our script type should be "module".
 
 ### Useful resources
 
