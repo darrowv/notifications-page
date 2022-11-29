@@ -44,17 +44,17 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Variable Font
+- DOM manipulations
+- Media queries
 
 ### What I learned
 
-
-
+Actually, I learned how to use variable fonts. It is pretty interesting feature. I also found out that to use import statement in js file our script type should be "module".
 
 ### Useful resources
 
 - [How to use variable fonts](https://css-tricks.com/newsletter/259-how-to-use-variable-fonts/)
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [Import statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 
 ## Author
 
